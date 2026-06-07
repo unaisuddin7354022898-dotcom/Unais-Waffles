@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unais Waffles Shop</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ff9ad5,#ffd6e8,#fff0a8,#a8e6ff);
+    min-height:100vh;
+    overflow-x:hidden;
+    text-align:center;
+}
+
+header{
+    padding:40px 20px;
+}
+
+h1{
+    font-size:3rem;
+    color:#fff;
+    text-shadow:3px 3px 10px rgba(0,0,0,0.3);
+}
+
+.tagline{
+    color:white;
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+.card{
+    background:rgba(255,255,255,0.85);
+    width:90%;
+    max-width:700px;
+    margin:20px auto;
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+h2{
+    color:#ff4fa3;
+    margin-bottom:15px;
+}
+
+select{
+    width:80%;
+    padding:12px;
+    border:none;
+    border-radius:15px;
+    font-size:16px;
+    margin:10px;
+}
+
+button{
+    background:#ff4fa3;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+#surprise{
+    margin-top:20px;
+    color:#ff1493;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.emoji{
+    position:fixed;
+    bottom:-50px;
+    font-size:30px;
+    animation:float 10s linear infinite;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-120vh);
+    }
+}
+
+footer{
+    margin:40px;
+    color:white;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍦 Welcome to Unais Waffles Shop 🧇</h1>
+    <p class="tagline">Specially Crafted with Love for Every Customer 💖</p>
+</header>
+
+<div class="card">
+    <h2>Hello Mariyam! 😊</h2>
+    <p>Choose your favourite waffle and ice cream!</p>
+
+    <h3>🧇 Waffle Flavour</h3>
+    <select>
+        <option>🍫 Chocolate Waffle</option>
+        <option>🍫 Dark Chocolate Waffle</option>
+        <option>🍦 Vanilla Waffle</option>
+        <option>🍯 Butterscotch Waffle</option>
+        <option>🍓 Strawberry Waffle</option>
+        <option>🍪 Oreo Waffle</option>
+        <option>🥜 Nutella Waffle</option>
+    </select>
+
+    <h3>🍨 Ice Cream</h3>
+    <select>
+        <option>🍦 Vanilla</option>
+        <option>🍫 Chocolate</option>
+        <option>🍓 Strawberry</option>
+        <option>🍯 Butterscotch</option>
+        <option>🥭 Mango</option>
+        <option>🍪 Cookies & Cream</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="surpriseMsg()">Place My Order 💖</button>
+
+    <p id="surprise"></p>
+</div>
+
+<footer>
+✨ Made with Care by Unais ✨
+</footer>
+
+<!-- Floating Emojis -->
+<div class="emoji" style="left:10%;">🍦</div>
+<div class="emoji" style="left:25%;animation-delay:2s;">💖</div>
+<div class="emoji" style="left:40%;animation-delay:4s;">🧇</div>
+<div class="emoji" style="left:55%;animation-delay:1s;">✨</div>
+<div class="emoji" style="left:70%;animation-delay:3s;">🍫</div>
+<div class="emoji" style="left:85%;animation-delay:5s;">🌸</div>
+
+<script>
+function surpriseMsg(){
+    document.getElementById("surprise").innerHTML =
+    "✨ Thank you Mariyam! Your sweet order has been received! 🍦💖";
+}
+</script>
+
+</body>
+  </html>
